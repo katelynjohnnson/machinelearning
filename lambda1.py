@@ -74,3 +74,40 @@ numbers = [2, 4, 6, 8, 10, 3, 18, 14, 21]
 # lsit() makes a new list
 filtered_list = list(filter(lambda num: (num > 7), numbers))
 print(filtered_list)
+
+# applies a function to every element in the list
+# shows 0 and 1 becuase it is the left over of the %
+mapped_list = list(map(lambda num: num % 2, numbers))
+print(mapped_list)
+
+# assigns 5 to a
+
+
+def x(a): return a + 10
+
+
+print(x(5))
+
+# assigns 5,6,7 in order of a,b,c then executes
+
+
+def x(a, b, c): return a + b + c
+
+
+print(x(5, 6, 7))
+
+# traditional way
+
+
+def addition(n):
+    return n + n
+
+
+numbers = [1, 2, 3, 4]
+result = map(addition, numbers)
+print(list(result))
+
+# new way
+numbers = [1, 2, 3, 4]
+result = map(lambda n: n + n, numbers)
+print(list(result))
