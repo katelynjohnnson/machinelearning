@@ -22,3 +22,4 @@
 #####row = sample
 #####column = feature
 # unsupervised ML: works with unlabeled data
+# images are 2D; the color intensity ranges from 0 to 16 which creates the projected image
